@@ -16,5 +16,21 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ]
+  ],
+   "screenshots": [
+    {
+     "src": "screenshot-wide.png",
+      "sizes": "1917x937",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "rosary guide desktop"
+    },
+    {
+     "src": "source/image1.png",
+      "sizes": "391x730",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "rosary guide mobile"
+    }
+]
 }
