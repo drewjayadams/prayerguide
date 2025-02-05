@@ -1,5 +1,9 @@
 {
   "name": "rosary guide",
+  "description": "a guide for various rosary-based prayers",
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "auto"]
+  },
   "short_name": "rosary",
   "id": "https://drewjayadams.github.io/prayerguide/",
   "start_url": "/prayerguide/index.html",
