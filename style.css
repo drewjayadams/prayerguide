@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Use a monospace font and plain styling */
+html, body {
+  height: 100%;
+  font-family: monospace;
+  background: #fff;
+  color: #000;
+}
+
+/* Center the container in the viewport */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*overflow: hidden;*/
+}
+
+/* Container styling */
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* Updated title styling: same size as body text, bold, with extra space underneath */
+h1, h2 {
+  text-align: left;
+  font-size: 1.1em;       /* Same as body text */
+  font-weight: bold;
+  margin-top: 1.1em;
+  margin-bottom: 1.1em;/* Extra space (an empty line) underneath */
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+/* Styling for dropdown select boxes */
+select {
+  margin-top: 5px;
+  font-family: monospace;
+  border: none;
+  border-bottom: 1px solid #000;
+  background: none;
+  padding: 5px;
+  width: 50%;
+  
+  /* Remove native appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  /* Add a downward arrow as a background image */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'><polyline points='1,3 5,7 9,3' stroke='%23000' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
+/* Style all hyperlinks as plain text links */
+a {
+  display: block;
+  margin-top: 20px;
+  text-decoration: underline;
+  color: blue;
+  cursor: pointer;
+}
+
+/* Mysteries/miracles list styling */
+.mysteries {
+  margin-top: 15px;
+}
+
+.mystery {
+  margin-bottom: 10px;
+}
+
+/* The expanded prayer details section is hidden by default */
+.expanded {
+  display: none;
+  margin-top: 20px;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+}
