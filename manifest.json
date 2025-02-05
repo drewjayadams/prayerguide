@@ -6,7 +6,7 @@
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "orientation": "portrait",
-  "scope": "/",
+  "scope": "/prayerguide/",
   "categories": ["lifestyle"],
   "icons": [
     {
