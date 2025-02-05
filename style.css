@@ -16,9 +16,9 @@ html, body {
 /* Center the container in the viewport */
 body {
   display: flex;
+  flex-direction: column;  /* So content stacks vertically */
   align-items: center;
-  justify-content: center;
-  overflow-y: auto;
+  overflow-y: auto;  /* Allow vertical scrolling */
 }
 
 /* Container styling */
