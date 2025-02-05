@@ -1,10 +1,10 @@
 const CACHE_NAME = 'rosary-cache-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/script.js',
-  '/manifest.json'
+  '/prayerguide/',
+  '/prayerguide/index.html',
+  '/prayerguide/style.css',
+  '/prayerguide/script.js',
+  '/prayerguide/manifest.json'
   // Add any other assets you want to cache, e.g., icons
 ];
 
