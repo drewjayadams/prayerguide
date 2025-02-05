@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ensures proper scaling on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rosary Prayer Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Start Screen -->
+  <div class="container" id="start-screen">
+    <h1></h1>
+    <form id="prayerForm">
+      <label for="daySelect">What day of the week is it?</label>
+      <select id="daySelect" required>
+        <option value="" disabled selected>Select day</option>
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+      </select>
+      
+      <label for="rosarySelect">Which rosary would you like to pray?</label>
+      <select id="rosarySelect" required>
+        <option value="" disabled selected>Select rosary type</option>
+        <option value="traditional">Traditional Rosary</option>
+        <option value="lutheran">Lutheran Rosary</option>
+        <option value="ecumenical">Ecumenical Rosary</option>
+        <option value="modified">Modified Rosary</option>
+      </select>
+      
+      <!-- Hyperlink used for submitting the form -->
+      <a href="#" id="startPraying">Submit</a>
+    </form>
+  </div>
+
+  <!-- Season Screen (only shown when ecumenical and Sunday are selected) -->
+  <div class="container" id="season-screen" style="display: none;">
+    <h1>What season is it?</h1>
+    <label for="seasonSelect">Select season:</label>
+    <select id="seasonSelect" required>
+      <option value="" disabled selected>Select season</option>
+      <option value="advent">Advent 1 through the Sunday before Ash Wednesday</option>
+      <option value="lent">Lent 1 through Palm Sunday</option>
+      <option value="easter">Easter through the Sunday before Advent</option>
+    </select>
+    <a href="#" id="continueSeason">Continue</a>
+  </div>
+
+  <!-- Results Screen -->
+  <div class="container" id="results-screen" style="display: none;">
+    <!-- Hyperlink to return to the start screen -->
+    <a href="#" id="backToStart">Back</a>
+    
+    <h1 id="titleMysteries">Mysteries for the Day</h1>
+    <div id="mysteriesContainer" class="mysteries">
+      <!-- Mysteries or miracles will be inserted here -->
+    </div>
+    
+    <!-- Hyperlink for showing prayer details -->
+    <a href="#" id="toggleExpanded">Show Prayer Details</a>
+    
+    <!-- Expanded Prayer Details Section -->
+    <div id="expandedSection" class="expanded">
+      <h2>Prayer Order and Text</h2>
+      <div id="prayerDetails">
+        <p>[Prayer details go here]</p>
+      </div>
+      <!-- Hyperlink for returning from expanded details to the results view -->
+      <a href="#" id="backToResults">Hide</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
