@@ -26,6 +26,7 @@ body {
   width: 100%;
   max-width: 400px;
   padding: 20px;
+  padding-top:80px;
 }
 
 /* Updated title styling: same size as body text, bold, with extra space underneath */
