@@ -1,7 +1,7 @@
 {
   "name": "rosary guide",
   "short_name": "rosary",
-  "start_url": "/prayerguide/index.html",
+  "start_url": "https://drewjayadams.github.io/prayerguide/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
